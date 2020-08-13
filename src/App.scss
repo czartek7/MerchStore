@@ -1,0 +1,113 @@
+////////////////////////
+// Font Imports
+////////////////////////
+
+@font-face {
+  font-family: "Jaapokki-regular";
+  src: url("./fonts/regular/jaapokki-regular.eot");
+  src: url("./fonts/regular/jaapokki-regular.woff") format("woff"),
+    url("./fonts/regular/jaapokki-regular.ttf") format("truetype"),
+    url("./fonts/regular/jaapokki-regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Jaapokki-enchance";
+  src: url("./fonts/enchance/jaapokkienchance-regular.eot");
+  src: url("./fonts/enchance/jaapokkienchance-regular.woff") format("woff"),
+    url("./fonts/enchance/jaapokkienchance-regular.ttf") format("truetype"),
+    url("./fonts/enchance/jaapokkienchance-regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Jaapokki-subtract";
+  src: url("./fonts/subtract/jaapokkisubtract-regular.eot");
+  src: url("./fonts/subtract/jaapokkisubtract-regular.woff") format("woff"),
+    url("./fonts/subtract/jaapokkisubtract-regular.ttf") format("truetype"),
+    url("./fonts/subtract/jaapokkisubtract-regular.svg") format("svg");
+}
+
+@import "./colors&fonts.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+
+/////////////////////////////
+// General styles
+/////////////////////////////
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $black;
+  color: $light-gray;
+  font-family: $raleway;
+  line-height: 1.45;
+  zoom: 90%;
+}
+
+.App {
+  text-align: center;
+}
+
+.logodiv {
+  margin-top: 7px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: $jaapokki-enchance;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: $light-gray;
+
+  span {
+    font-family: $jaapokki-subtract;
+    color: $white;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $gray;
+  height: 8vh;
+  padding: 2.5em 3em 2.5em 3em;
+  z-index: 10;
+}
+
+.nav-items {
+  font-family: $jaapokki-regular;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  //border: 1px red solid;
+
+  .nav-item {
+    color: $medium-gray;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.3s linear;
+
+    &.active {
+      color: $light-gray;
+    }
+
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+  }
+}

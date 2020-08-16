@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (

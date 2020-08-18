@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import Home from "./components/About/Home";
+import Home from "./components/Home/Home";
 import Shop from "./components/Shop/Shop";
 import Contact from "./components/Contact/Contact";
 import {
@@ -23,13 +23,13 @@ function App() {
           </div>
           <ul className="nav-items">
             <Link className="nav-item" to="/home">
-              <li>Home</li>
+              <li className="li">Home</li>
             </Link>
             <Link className="nav-item" to="/shop">
-              <li>Shop</li>
+              <li className="li">Shop</li>
             </Link>
             <Link className="nav-item" to="/contact">
-              <li>Contact</li>
+              <li className="li">Contact</li>
             </Link>
           </ul>
         </nav>

@@ -1,5 +1,49 @@
 .Shop {
-  padding-top: 100px;
-  font-size: 40px;
-  color: tomato;
+  padding-top: 150px;
+}
+
+.product-title {
+  font-family: "Jaapokki-subtract";
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  font-size: 3em;
+}
+
+.price {
+  color: #a38926;
+  font-family: "Jaapokki-enchance";
+  font-size: 3em;
+}
+
+.dif-color {
+  background-color: #464646;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8em;
+}
+
+.item li {
+  list-style: none;
+}
+
+.item-reverse {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8em;
+  flex-direction: row-reverse;
+}
+
+.item-reverse li {
+  list-style: none;
+}
+
+.image {
+  height: 25em;
+  width: 25em;
+  border: #f5f5f5 solid 5px;
+  border-radius: 10px;
+  object-fit: cover;
 }

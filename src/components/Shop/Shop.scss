@@ -1,3 +1,50 @@
+@import "../../colors&fonts.scss";
 .Shop {
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+.product-title {
+  font-family: $jaapokki-subtract;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  font-size: 3em;
+}
+
+.price {
+  color: $yellowish;
+  font-family: $jaapokki-enchance;
+  font-size: 3em;
+}
+
+.dif-color {
+  background-color: $lighter-black;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8em;
+
+  li {
+    list-style: none;
+  }
+}
+
+.item-reverse {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8em;
+  flex-direction: row-reverse;
+
+  li {
+    list-style: none;
+  }
+}
+
+.image {
+  height: 25em;
+  width: 25em;
+  border: $white solid 5px;
+  border-radius: 10px;
+  object-fit: cover;
 }

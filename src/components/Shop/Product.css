@@ -1,0 +1,42 @@
+.Product {
+  padding: 150px 150px 0 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Product .desc-product .price-product {
+  color: #a38926;
+  padding-bottom: 30px;
+}
+
+.Product .desc-product .info-product {
+  padding: 0 100px 0 100px;
+  text-align: justify;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.Product .img-product img {
+  height: 500px;
+  border-radius: 5px;
+}
+
+.Product .cartbutton {
+  background-color: #a38926;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.Product .cartbutton:hover {
+  transform: scale(1.05);
+}
+
+.Product .cartbutton p {
+  margin: 0 15px 0 15px;
+  padding-top: 7px;
+  font-size: 2rem;
+  font-family: "Jaapokki-subtract";
+  text-transform: uppercase;
+  color: #353535;
+}

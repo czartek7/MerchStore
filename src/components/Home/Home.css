@@ -47,18 +47,18 @@
   animation-fill-mode: both;
 }
 
-button {
+.homebutton {
   background-color: #a38926;
   border-radius: 10px;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
-button:hover {
+.homebutton:hover {
   transform: scale(1.05);
 }
 
-button p {
+.homebutton p {
   margin: 15px;
   padding-top: 7px;
   font-size: 3rem;

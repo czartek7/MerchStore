@@ -1,8 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, reset } from "../../actions";
-import { login } from "../../actions";
+import { increment, decrement, reset, login } from "../../actions";
 
 function Contact() {
   const counter = useSelector((state) => state.counter);

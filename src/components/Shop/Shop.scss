@@ -1,50 +1,43 @@
 @import "../../colors&fonts.scss";
+
 .Shop {
-  padding-top: 150px;
-}
+  padding: 150px 150px 0 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+  gap: 40px;
 
-.product-title {
-  font-family: $jaapokki-subtract;
-  text-transform: uppercase;
-  padding-bottom: 1em;
-  font-size: 3em;
-}
+  .shop-item {
+    padding: 40px;
+    background-color: $yellowish;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    text-decoration: none !important;
+    transition: all ease-in-out 0.3s;
 
-.price {
-  color: $yellowish;
-  font-family: $jaapokki-enchance;
-  font-size: 3em;
-}
+    &:hover {
+      transform: scale(1.05);
+    }
 
-.dif-color {
-  background-color: $lighter-black;
-}
+    img {
+      height: 200px;
+      border-radius: 5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.item {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 8em;
+    p {
+      color: $true-black;
+      font-size: 25px;
+      padding-top: 15px;
+    }
 
-  li {
-    list-style: none;
+    .item-name {
+      text-decoration: none !important;
+      color: $true-black;
+      padding-bottom: 10px;
+    }
   }
-}
-
-.item-reverse {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 8em;
-  flex-direction: row-reverse;
-
-  li {
-    list-style: none;
-  }
-}
-
-.image {
-  height: 25em;
-  width: 25em;
-  border: $white solid 5px;
-  border-radius: 10px;
-  object-fit: cover;
 }

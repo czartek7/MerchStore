@@ -10,6 +10,7 @@ import {
   Link,
   Switch,
 } from "react-router-dom";
+import Product from "./components/Shop/Product";
 
 function App() {
   return (
@@ -37,8 +38,9 @@ function App() {
         <Switch>
           <Redirect from="/" exact to="/home" />
           <Route path="/home" component={Home} />
-          <Route path="/shop" component={Shop} />
+          <Route path="/shop" exact component={Shop} />
           <Route path="/contact" component={Contact} />
+          <Route path="/shop/:id" component={Product} />
         </Switch>
       </div>
     </Router>
